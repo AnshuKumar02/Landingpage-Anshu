@@ -1,0 +1,199 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background: #f7f7f7;
+    padding: 10px 0;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links a {
+    margin: 0 5px;
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.contact-info span {
+    margin-left: 10px;
+    color: #333;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.header-buttons .btn {
+    background: #ff4081;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(211, 211, 211, 0.7); /* Light gray with transparency */
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    padding: 20px;
+    max-width: 80%;
+}
+
+.hero-content h1, .hero-content p {
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background: #ff4081;
+    color: #fff;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    background: linear-gradient(to right, #ff4081, #ffb74d);
+    color: #fff;
+    text-align: center;
+}
+
+.services .service {
+    width: 30%;
+}
+
+/* About Section */
+.about {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
+.about .btn {
+    background: #ff4081;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* Our Services Section */
+.our-services {
+    padding: 50px 0;
+}
+
+.our-services .service {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 0 1.5%;
+}
+
+.service-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+ 
+
+
+
+/* Clearfix hack for the .services container */
+.services::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 0;
+    background: linear-gradient(to right, #ff4081, #ffb74d);
+    color: #fff;
+    text-align: center;
+}
+
+.services .service {
+    width: 30%;
+    float: left; /* Floats the elements left */
+}
+
+
+
+
+
+
